@@ -17,13 +17,15 @@
             </StackLayout>
 
             <GridLayout ~mainContent columns="*" rows="*">
-                <Label class="message" :text="msg" col="0" row="0"/>
+                <TextView class="min-w-full" :text="msg" editable="false" />
+                
             </GridLayout>
         </RadSideDrawer>
     </Page>
 </template>
 
 <script lang="ts">
+import {} from "./components/kuslar/kus.vue"
   export default {
     data() {
       return {
